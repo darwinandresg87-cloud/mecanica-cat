@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta - AutoCare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <h2>AutoCare</h2>
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="login.html">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="login">
+            <h1>Crear cuenta</h1>
+            <p class="texto-login">Regístrate en el sistema AutoCare</p>
+
+            <form id="formRegistro">
+                <div class="campo">
+                    <label for="nuevoNombre">Nombre completo</label>
+                    <input type="text" id="nuevoNombre" placeholder="Ej: Juan Pérez" required>
+                </div>
+
+                <div class="campo">
+                    <label for="nuevoEmail">Correo electrónico</label>
+                    <input type="email" id="nuevoEmail" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="nuevoTelefono">Teléfono</label>
+                    <input type="tel" id="nuevoTelefono" pattern="09[0-9]{8}" title="Formato: 0991234567" placeholder="0991234567" required>
+                </div>
+
+                <div class="campo">
+                    <label for="nuevoUsuario">Usuario</label>
+                    <input type="text" id="nuevoUsuario" placeholder="Ingresa tu usuario" required>
+                </div>
+
+                <div class="campo">
+                    <label for="nuevoPassword">Contraseña</label>
+                    <input type="password" id="nuevoPassword" placeholder="Ingresa tu contraseña" required>
+                </div>
+
+                <div class="campo">
+                    <label for="confirmarPassword">Confirmar contraseña</label>
+                    <input type="password" id="confirmarPassword" placeholder="Repite tu contraseña" required>
+                </div>
+
+                <div class="botones">
+                    <button type="submit" class="boton">Registrarse</button>
+                    <a href="login.html" class="boton-volver">Volver</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
